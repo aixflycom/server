@@ -378,7 +378,7 @@ def open_chrome_instance(driver_path, profile_path, window_index, url=None):
 
                                         # If claim not completed, proceed with normal claim process
                                         # Wait for the offer button to become clickable and click it
-                                        offer_button_xpath = "/html/body/div[1]/div[3]/div/div/div/div[2]/div/div[2]/button[2]"
+                                        offer_button_xpath = "/html/body/div[1]/div[3]/div/div/div/div[2]/div/div[2]/button"
                                         try:
                                             offer_button = WebDriverWait(browser, 3600).until(
                                                 EC.element_to_be_clickable((By.XPATH, offer_button_xpath))
